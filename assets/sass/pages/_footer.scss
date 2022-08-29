@@ -1,0 +1,54 @@
+.footer {
+    color: $white-two;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    &__social {
+        
+        i {
+            font-size: 22px;
+            margin-right: 1.5rem;
+            cursor: pointer;
+            color: $white;
+        }
+    }
+
+    &__content {
+        margin: 1rem auto;
+    }
+
+    &__content-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        line-height: 1.5rem;
+        transition: all 1s linear;
+    }
+
+    &__list {
+        cursor: pointer;
+        margin-left: -1rem;
+
+        &:hover {
+            color: $white;
+            padding-left: 1rem;
+            transition: all 1s linear;
+        }
+
+        &:not(:hover) {
+            transition: all 1s linear;
+        }
+    }
+
+    &__button {
+        background: none;
+        color: $white-two;
+        border: 1px solid $white-two;
+        padding: 0.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__copy-text {
+        font-size: 11px;
+    }
+}

@@ -5,11 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Netlfix</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Netflix</title>
 </head>
 <body>
 
-    <script src="assets/js/script.js"></script>
-    
+    <div class="app__background">
+        <div class="app__hero">
+            <header class="header">
+                <div class="header__list">
+                    <img class="header__img" src="assets/img/logo.png" alt="logo netflix">
+                    <ul class="header__lists">
+                        <li class="header__list-item">ínicio</li>
+                        <li class="header__list-item">séries</li>
+                        <li class="header__list-item">filmes</li>
+                        <li class="header__list-item">bombando</li>
+                        <li class="header__list-item">minha lista</li>
+                    </ul>
+                </div>
+                <div class="header__right">
+                    <ul class="header__lists-right">
+                        <li class="header__list-right">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li class="header__list-right">
+                            <i class="fa-solid fa-bell"></i>
+                        </li>
+                        <li class="header__list-right">
+                            <img src="assets/img/user.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="main__banner">
+                    <img src="assets/img/poster.png" alt="" class="main__img">
+                    <span class="main__subtitle">
+                        Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica.
+                    </span>
+                    <div class="main__btn">
+                        <button class="main__button-watch">
+                            <i class="fas fa-play"></i>
+                            Assistir
+                        </button>
+                        <button class="main__info">
+                            <i class="fas fa-thin fa-circle-info"></i>
+                            Mais informações
+                        </button>
+                    </div>
+                </div>
+
+                <div class="main__category">
+                    <p class="main__title">Minha lista</p>
+                    <section class="main__section"></section>
+                </div>
+                <div class="main__category">
+                    <p class="main__title">Em alta</p>
+                    <section class="main__section" id="high"></section>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__content-info">
+                        <ul>
+                            <li class="footer__list">Idioma e legendas</li class="footer__list">
+                            <li class="footer__list">Imprensa</li>
+                            <li class="footer__list">Privacidade</li>
+                            <li class="footer__list">Entre em contato</li>
+                        </ul>
+                        <ul>
+                            <li class="footer__list">Audiodescrição</li>
+                            <li class="footer__list">Relações com investidores</li>
+                            <li class="footer__list">Avisos legais</li>
+                        </ul>
+                        <ul>
+                            <li class="footer__list">Centro de ajuda</li>
+                            <li class="footer__list">Carreiras</li>
+                            <li class="footer__list">Preferência de cookies</li>
+                        </ul>
+                        <ul>
+                            <li class="footer__list">Cartão pré-pago</li>
+                            <li class="footer__list">Termos de uso</li>
+                            <li class="footer__list">Informações corporativas</li>
+                        </ul>
+                    </div>
+                    <div class="footer__service">
+                        <button class="footer__button">Código de serviço</button>
+                    </div>
+                    <div class="footer__copy">
+                        <span class="footer__copy-text">&copy; 1997-2022 Netflix, Inc.</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/131a4c7b84.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
+
 </body>
 </html>

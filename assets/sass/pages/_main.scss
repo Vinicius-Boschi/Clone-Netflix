@@ -1,0 +1,82 @@
+.main {
+    display: inline;
+    padding: 0 3rem;
+
+    &__banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        height: 80%;
+        padding: 1rem;
+    }
+
+    &__subtitle {
+        color: #FFF;
+        margin: 1rem 0 1rem 0;
+        font-size: 1.2vw;
+        line-height: 1.25;
+    }
+
+    &__button-watch, &__info {
+        border: none;
+        border-radius: 2px;
+        padding: .6rem 2rem;
+        color: $black;
+        width: 30%;
+        font-weight: bold;
+        cursor: pointer;
+
+        i {
+            padding-right: .3rem;
+        }
+
+        &:hover {
+            background-color: $white-two;
+        }
+    }
+
+    &__info {
+        width: 40%;
+        background: $gray;
+        margin-left: 1rem;
+        color: $white;
+
+        &:hover {
+            background-color: $gray-two;
+        }
+    }
+
+    &__category {
+        padding: 1rem;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &__section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        position: relative;
+        margin: 1.2rem 0;
+    }
+
+    &__item {
+        margin-right: 1.5rem;
+    }
+
+    &__item img {
+        max-width: 100%;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            filter: opacity(.5) drop-shadow(0 0 0 $white-three); 
+        }
+    }
+}

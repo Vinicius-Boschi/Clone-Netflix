@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+
+    &__img {
+        width: 6rem;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__lists {
+        display: flex;
+        padding-left: 1rem;
+    }
+
+    &__list-item {
+        list-style: none;
+        text-transform: capitalize;
+        color: $white-two;
+        padding: .5rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__lists-right {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__list-right {
+        padding: .5rem;
+    }
+}
