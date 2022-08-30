@@ -12,7 +12,7 @@ Site que consiste em ser um clone da famosa Netflix.
 ![listas](https://user-images.githubusercontent.com/74377158/187546141-abda2402-d0e3-48c7-88c3-2117d700e01a.jpg)
 
 # <h3> :file_folder: Acessar o projeto</h3>
-Acesse o projeto por meio deste [link](https://cloneofnetflixx.netlify.app/).
+Acesse o projeto por meio deste [link](https://replicaofnetflix.netlify.app/).
 
 
 # <h3> :x: Erros possíveis </h3>
