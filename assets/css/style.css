@@ -170,8 +170,7 @@ body {
   margin-bottom: 1rem;
 }
 .main__section {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   width: 100%;
   position: relative;
   margin: 1.2rem 0;
@@ -180,7 +179,6 @@ body {
   margin-right: 1.5rem;
 }
 .main__item img {
-  max-width: 100%;
   transition: all 0.3s;
   cursor: pointer;
 }

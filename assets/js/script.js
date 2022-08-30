@@ -1,6 +1,6 @@
-import { myList } from './app.js'
+import { myList, high, stranger, eccentric } from './app.js'
 
-let categorys = document.querySelector('.main__section')
+let categorys = document.querySelector('#myList')
 function showList() {
     for (let i = 0; i < myList.length; i++) {
         categorys.innerHTML += `
@@ -14,21 +14,31 @@ function showList() {
 let highCategorys = document.querySelector('#high')
 function showHighCategory() {
     for (let i = 0; i < high.length; i++) {
-        highCategorys += `
+        highCategorys.innerHTML += `
             <div class="main__item">
-                <img src="assets/img/top10/poster_01.jpeg" alt="foto da série">
+                <img src="${high[i].image}" alt="${high[i].name}">
             </div>
+        `
+    }
+}
+
+let strangerCategorys = document.querySelector('#stranger')
+function showStrangerCategory() {
+    for (let i = 0; i < stranger.length; i++) {
+        strangerCategorys.innerHTML += `
             <div class="main__item">
-                <img src="assets/img/top10/poster_02.jpeg" alt="foto da série">
+                <img src="${stranger[i].image}" alt="${stranger[i].name}">
             </div>
+        `
+    }
+}
+
+let eccentricCategorys = document.querySelector('#eccentric')
+function showEccentricCategory() {
+    for (let i = 0; i < eccentric.length; i++) {
+        eccentricCategorys.innerHTML += `
             <div class="main__item">
-                <img src="assets/img/top10/poster_03.jpeg" alt="foto da série">
-            </div>
-            <div class="main__item">
-                <img src="assets/img/top10/poster_04.jpeg" alt="foto da série">
-            </div>
-            <div class="main__item">
-                <img src="assets/img/top10/poster_05.jpeg" alt="foto da série">
+                <img src="${eccentric[i].image}" alt="${eccentric[i].name}">
             </div>
         `
     }
@@ -36,3 +46,5 @@ function showHighCategory() {
 
 showList()
 showHighCategory()
+showStrangerCategory()
+showEccentricCategory()

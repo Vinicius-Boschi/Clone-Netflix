@@ -1,31 +1,23 @@
-$('#strangers').slick({
-  infinite: false,
-  speed: 300,
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  arrows: false,
-  responsive: [
-  //   {
-  //     breakpoint: 1024,
-  //     settings: {
-  //       slidesToShow: 4,
-  //       slidesToScroll: 4,
-  //       infinite: true
-  //     }
-  //   },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+new Glider(document.querySelector('#myList'), {
+  slidesToScroll: 1,
+  slidesToShow: 5.5,
+  draggable: true
+})
+
+new Glider(document.querySelector('#high'), {
+  slidesToScroll: 1,
+  slidesToShow: 5.5,
+  draggable: true
+})
+
+new Glider(document.querySelector('#stranger'), {
+  slidesToScroll: 1,
+  slidesToShow: 5.5,
+  draggable: true
+})
+
+new Glider(document.querySelector('#eccentric'), {
+  slidesToScroll: 1,
+  slidesToShow: 5.5,
+  draggable: true
 })
