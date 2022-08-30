@@ -68,6 +68,11 @@ body {
   color: #FFF;
   font-family: "Roboto", "sans-serif";
 }
+@media (min-width: 375px) and (max-width: 800px) {
+  body {
+    width: calc(100% - 24px);
+  }
+}
 
 .app__background {
   height: 100vh;
@@ -75,6 +80,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0.26rem 0.75rem 0 0.75rem;
+}
+@media (min-width: 375px) and (max-width: 800px) {
+  .app__background {
+    width: 111%;
+  }
 }
 
 .app__hero {
@@ -110,10 +120,19 @@ body {
 .header__list-item:hover {
   color: #FFF;
 }
+.header__list-item a {
+  text-decoration: none;
+  color: inherit;
+}
 .header__lists-right {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+@media (min-width: 375px) and (max-width: 800px) {
+  .header__lists-right {
+    display: none;
+  }
 }
 .header__list-right {
   padding: 0.5rem;
@@ -127,22 +146,35 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 30%;
   height: 80%;
   padding: 1rem;
+}
+@media (min-width: 375px) and (max-width: 800px) {
+  .main__banner {
+    width: 50%;
+  }
 }
 .main__subtitle {
   color: #FFF;
   margin: 1rem 0 1rem 0;
-  font-size: 1.2vw;
+  font-size: 1rem;
   line-height: 1.25;
+}
+@media (min-width: 375px) and (max-width: 800px) {
+  .main__subtitle {
+    font-size: 0.8rem;
+  }
+}
+.main__btn {
+  display: flex;
 }
 .main__button-watch, .main__info {
   border: none;
   border-radius: 2px;
   padding: 0.6rem 2rem;
   color: #000;
-  width: 30%;
+  width: auto;
   font-weight: bold;
   cursor: pointer;
 }
@@ -153,7 +185,6 @@ body {
   background-color: #ffffffc6;
 }
 .main__info {
-  width: 40%;
   background: #6d6d6eb3;
   margin-left: 1rem;
   color: #FFF;
@@ -163,6 +194,11 @@ body {
 }
 .main__category {
   padding: 1rem;
+}
+@media (min-width: 375px) and (max-width: 800px) {
+  .main__category {
+    padding: 0;
+  }
 }
 .main__title {
   font-size: 18px;
@@ -178,6 +214,11 @@ body {
 .main__item {
   margin-right: 1.5rem;
 }
+@media (min-width: 375px) and (max-width: 800px) {
+  .main__item {
+    margin-right: 0.5rem;
+  }
+}
 .main__item img {
   transition: all 0.3s;
   cursor: pointer;
@@ -185,6 +226,11 @@ body {
 .main__item img:hover {
   transform: scale(1.1);
   filter: opacity(0.5) drop-shadow(0 0 0 rgba(255, 255, 255, 0.421));
+}
+@media (min-width: 375px) and (max-width: 800px) {
+  .main__item img {
+    width: 15rem;
+  }
 }
 
 .footer {
@@ -207,6 +253,12 @@ body {
   padding: 1rem;
   line-height: 1.5rem;
   transition: all 1s linear;
+}
+@media (min-width: 375px) and (max-width: 800px) {
+  .footer__content-info {
+    flex-direction: column;
+    line-height: 2rem;
+  }
 }
 .footer__list {
   cursor: pointer;

@@ -23,6 +23,11 @@
         padding: 1rem;
         line-height: 1.5rem;
         transition: all 1s linear;
+
+        @include responsive {
+            flex-direction: column;
+            line-height: 2rem;
+        }
     }
 
     &__list {

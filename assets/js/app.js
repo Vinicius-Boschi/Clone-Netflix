@@ -48,19 +48,19 @@ const high = [
     },
     {
         image: 'assets/img/top10/poster_07.jpg',
-        name: 'Continência do amor'
+        name: 'Lúcifer'
     },
     {
         image: 'assets/img/top10/poster_08.jpg',
-        name: 'Agente Oculto'
+        name: 'Vis a Vis'
     },
     {
         image: 'assets/img/top10/poster_09.jpg',
-        name: 'Uncharted'
+        name: 'Fauda'
     },
     {
         image: 'assets/img/top10/poster_10.jpg',
-        name: 'Dupla Jornada'
+        name: 'O sucessor'
     }
 ]
 
